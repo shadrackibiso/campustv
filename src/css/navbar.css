@@ -1,0 +1,28 @@
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  margin-bottom: 5em;
+}
+.navbar .logo img {
+  width: 60px;
+}
+.menu img {
+  width: 40px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbar .logo img {
+    width: 60px;
+  }
+  .menu img {
+    width: 60px;
+  }
+}

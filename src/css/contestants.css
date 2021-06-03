@@ -1,0 +1,241 @@
+.contestants {
+  min-height: 90vh;
+}
+.ctsSearchForm {
+  display: flex;
+}
+.ctsSearchBar {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #1b1b1b;
+  border: 1px solid #3d3d3d;
+  width: 100%;
+  color: #fbb03b;
+}
+.ctsSearchBar:focus {
+  outline: 1px solid #fbb03b;
+  border: 1px solid #fbb03b;
+}
+.ctsCardContainer {
+  display: flex;
+}
+.ctsCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1b1b1b;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 15px; */
+  margin-bottom: 20px;
+}
+.ctsCardImage {
+  border: 1px solid #3d3d3d;
+  max-height: 310px;
+  width: 100%;
+  margin: 0px 0px 15px;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+.ctsCardImage img {
+  object-fit: cover;
+  width: 100%;
+}
+.ctsCardDetails {
+  padding: 0px 10px 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.ctsCardDetail {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+.ctsCardLabel {
+  color: #6b6b6b;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+.ctsCardVoteBtn {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #3d3d3d;
+  color: #6b6b6b;
+  text-transform: uppercase;
+  /* border-radius: 5px; */
+}
+.ctsCard form {
+  width: 100%;
+  padding: 10px;
+}
+.ctsCard form select {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #1b1b1b;
+  border: 1px solid rgb(82, 82, 82);
+  padding: 8px 5px;
+  color: #fff33b;
+}
+
+.ctsCard form button {
+  width: 100%;
+  padding: 10px 20px;
+  color: black !important;
+  background: #fff33b;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  font-family: montserrat;
+  border: none;
+}
+.ctsLeaderBoard {
+  border: 1px solid #3d3d3d;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.ctsRankingCard {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  background-color: #1b1b1b;
+  padding: 10px;
+  color: #919191;
+  font-size: 1rem;
+}
+.ctsRankingHeader {
+  background-color: #292929 !important;
+}
+.ctsRankingCard:nth-child(even) {
+  background-color: #292929;
+}
+.ctsRankingCardRank {
+  width: 8%;
+}
+.ctsRankingCardName {
+  width: 90%;
+  text-transform: capitalize;
+  padding-left: 5px;
+}
+.ctsRankingCardVotes {
+  width: 17%;
+}
+.tab {
+  display: flex;
+  background-color: #1b1b1b;
+  border: 1px solid #3d3d3d;
+  color: #919191;
+  /* padding: 0px 8px; */
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.tab div {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.tab .activeTab {
+  color: #fff33b;
+}
+.modal {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modalContent {
+  background: linear-gradient(-30deg, #fff33b, #e93e3a);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  width: 90%;
+  padding: 20px;
+  z-index: 7;
+  color: black;
+  text-align: center;
+  position: relative;
+  animation: zoom 0.2s ease both;
+}
+.modalContent p {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+.modalContent button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.adminMenuContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.adminMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+}
+.adminMenu .menuContent {
+  color: lightgrey;
+  padding: 5px 8px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: #919191;
+}
+.adminMenu select {
+  background: inherit;
+  color: #919191;
+  border: none;
+  padding: 5px 8px;
+}
+.searchBtn{
+  padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: black;
+    margin: 3px 0px 15px 5px;
+}
+
+@media (min-width: 768px) {
+  .adminMenuContainer {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .tab div {
+    cursor: pointer;
+  }
+  .tab div:hover {
+    background-color: #272727;
+  }
+  .ctsLeaderBoard {
+    /* margin: 0px auto; */
+    max-width: 50%;
+  }
+  .ctsCardVoteBtn {
+    cursor: pointer;
+  }
+  .ctsCardImage img {
+    object-fit: cover;
+    width: 500px;
+  }
+}

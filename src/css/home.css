@@ -1,0 +1,202 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 3px dotted #efce4d;
+  background-image: url(../images/heroImage.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.hero .heroLogo {
+  width: 90%;
+}
+.hero a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.heroBtn {
+  /* background: linear-gradient(90deg, #ac6f00, #fbf03b, #ac6f00); */
+  border: none;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 8px 25px;
+}
+.hero .leftLeaf {
+  position: absolute;
+  left: -25vw;
+  bottom: -18vh;
+  width: 75%;
+  animation: zoom 1.5s ease;
+  transform-origin: 0% 100%;
+}
+.hero .rightLeaf {
+  position: absolute;
+  right: -25vw;
+  bottom: -10vh;
+  width: 75%;
+  animation: zoom 1.5s ease;
+  transform-origin: 100% 100%;
+}
+.hero .dots1 {
+  position: absolute;
+  right: 7vw;
+  bottom: 20vh;
+  width: 15%;
+  animation: zoom 1.8s ease;
+}
+.hero .dots2 {
+  position: absolute;
+  left: 7vw;
+  bottom: 30vh;
+  width: 18%;
+  animation: zoom 1.6s ease;
+}
+.hero .dots3 {
+  position: absolute;
+  right: 30vw;
+  top: 20vh;
+  width: 15%;
+  animation: zoom 1.4s ease;
+}
+.prizeContainer {
+  position: relative;
+  border-bottom: 3px dotted #efce4d;
+  overflow: hidden;
+}
+.prize {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  color: black;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.prizeDots1 {
+  position: absolute;
+  right: -5vw;
+  top: 50vh;
+  width: 30%;
+  z-index: 5;
+}
+.prizeDots2 {
+  position: absolute;
+  left: -5vw;
+  top: 94vh;
+  width: 35%;
+  z-index: 5;
+}
+/* eligibility */
+.eligibilityContainer {
+  color: var(--main-color);
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+}
+.colContainer {
+  border: 1px solid var(--main-color);
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.eligibilityContainer .box1 {
+  position: absolute;
+  width: 50px;
+  left: -5vw;
+  top: 25.5vh;
+}
+.eligibilityContainer .box2 {
+  position: absolute;
+  width: 60px;
+  right: -5vw;
+  bottom: 23vh;
+}
+
+@media (min-width: 768px) {
+  .hero .heroLogo {
+    width: 40%;
+  }
+  .hero .leftLeaf {
+    position: absolute;
+    left: -8vw;
+    bottom: -13vh;
+    width: 22%;
+  }
+  .hero .rightLeaf {
+    position: absolute;
+    right: -8vw;
+    bottom: -10vh;
+    width: 25%;
+  }
+  .hero .dots1 {
+    position: absolute;
+    right: 7vw;
+    bottom: 20vh;
+    width: 15%;
+  }
+  .hero .dots2 {
+    position: absolute;
+    left: 7vw;
+    bottom: 40vh;
+    width: 15%;
+  }
+  .hero .dots3 {
+    position: absolute;
+    right: 30vw;
+    top: 20vh;
+    width: 10%;
+  }
+  .prizeDots1 {
+    position: absolute;
+    right: 31vw;
+    top: 20vh;
+    width: 6%;
+    z-index: 5;
+  }
+  .prizeDots2 {
+    position: absolute;
+    left: 30vw;
+    top: 46vh;
+    width: 8%;
+    z-index: 5;
+  }
+  .eligibilityContainer .box1 {
+    position: absolute;
+    width: 50px;
+    left: 28.2vw;
+    top: -3vh;
+  }
+  .eligibilityContainer .box2 {
+    position: absolute;
+    width: 60px;
+    right: 28vw;
+    bottom: -3vh;
+  }
+}

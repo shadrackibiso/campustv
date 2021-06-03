@@ -1,0 +1,148 @@
+.section {
+  padding: 50px 20px;
+  width: 100%;
+}
+footer.section {
+  padding: 20px;
+  background-color: #0a0a0a;
+  color: grey;
+}
+.btnLink {
+  text-decoration: none;
+}
+.btnLink:hover {
+  text-decoration: none;
+  color: initial;
+}
+.Btn {
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+.Btn:hover {
+  opacity: 1;
+}
+.Btn:focus {
+  outline: none;
+}
+.mainBtn {
+  border: none;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 8px 25px;
+}
+.secBtn {
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 8px 25px;
+}
+.label {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.labelLine {
+  background-color: var(--main-color);
+  height: 3px;
+  width: 100px;
+}
+form label {
+  color: #6b6b6b;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+form input {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  border: 1px solid rgb(82, 82, 82);
+  color: var(--main-color);
+  font-size: 18px !important;
+  /* text-transform: capitalize; */
+  padding: 5px;
+  margin: 3px 0px 15px;
+  position: relative;
+}
+form input:focus {
+  border: 2px solid var(--main-color);
+  outline: none !important;
+}
+form select {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #1b1b1b;
+  border: 1px solid rgb(82, 82, 82);
+  padding: 8px 5px;
+  color: var(--main-color);
+}
+select {
+  cursor: pointer;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: fade 0.1s ease both;
+  animation-delay: 0.12s;
+}
+.modalContainer {
+  background-color: #0a0a0a;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  width: 90%;
+  padding: 20px;
+  z-index: 7;
+  color: black;
+  text-align: center;
+  position: relative;
+  animation: zoom 0.2s ease both;
+  border: 1px solid rgb(49, 49, 49);
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 100px 50px;
+  }
+  footer.section {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .modalContainer {
+    width: 40%;
+  }
+}
